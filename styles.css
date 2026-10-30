@@ -66,3 +66,4 @@ pre{background:#0f1720;color:#d6e2ee;padding:10px;border-radius:8px;overflow-x:a
   .tiles{grid-template-columns:1fr 1fr}
 }
 @media (min-width:761px){#menuBtn{display:none}}
+main:focus{outline:none}

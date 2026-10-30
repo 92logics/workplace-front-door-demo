@@ -6,7 +6,7 @@
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const clone = o => JSON.parse(JSON.stringify(o));
   const now = () => new Date().toISOString();
-  const fmt = iso => new Date(iso).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+  const fmt = iso => new Date(iso).toLocaleString('en-US', { timeZone: 'America/New_York', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' ET';
   let db;
   function fresh() { const s = clone(WFD_SEED); return { listings: s.listings, subs: s.subs, consent: s.consent, events: s.events, inbox: s.inbox, content: s.content, threads: s.threads, saved: [], appointments: [], referrals: [], scheduled: [], audit: [], rules: clone(WFD.DEFAULT_RULES), role: 'Admin', lang: 'en', big: false }; }
   function load() { try { db = JSON.parse(localStorage.getItem(KEY)) || fresh(); } catch (e) { db = fresh(); } }
@@ -228,6 +228,7 @@
         audit('listing added', id + ' ' + f.title.value); save(); render(); say('Listing added'); };
     }
     if (route === 'staff/messaging') {
+      const scr = $('#simScreen'); scr.scrollTop = scr.scrollHeight;
       $('#simSel').onchange = e => { simPhone = e.target.value; render(); };
       const sim = body => { if (!body.trim()) return; sendInbound(simPhone, body.trim()); render(); };
       $('#simForm').onsubmit = e => { e.preventDefault(); sim($('#simText').value); };

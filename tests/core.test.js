@@ -25,7 +25,7 @@ ok(W.filterListings(S.listings, {}).every(l => l.status !== 'draft'), 'drafts hi
 ok(W.filterListings(S.listings, { type: 'training', freeOnly: true }).every(l => l.type === 'training' && l.cost === 0), 'free training filter');
 ok(W.filterListings(S.listings, { q: 'cna' }).length >= 2, 'keyword search');
 ok(W.filterListings(S.listings, { town: 'Bridgeport', type: 'job' }).every(l => l.town === 'Bridgeport'), 'town filter');
-const ics = W.ics(S.listings.find(l => l.type === 'event')); ok(/BEGIN:VEVENT[\s\S]*DTSTART:\d{8}T\d{6}/.test(ics), 'valid iCal event');
+const ics = W.ics(S.listings.find(l => l.type === 'event')); ok(/BEGIN:VEVENT[\s\S]*DTSTART:\d{8}T\d{6}Z/.test(ics), 'valid iCal event');
 const a = W.analytics(S.events, S.subs, S.consent); ok(a.optedIn === S.subs.filter(s => s.sms === 'opted_in').length && a.smsSent === 300 && a.funnel.acted === 38 + 21 + 9, 'analytics reconcile with seed');
 ok(W.maskPhone('(203) 555-0110') === '(•••) •••-0110', 'phone masking keeps last 4');
 ok(S.subs.every(s => /555-01\d\d$/.test(s.phone)), 'all seed phones are fictional 555-01xx');

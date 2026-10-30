@@ -97,7 +97,7 @@
 
   /** iCalendar (.ics) for an event. */
   function ics(ev) {
-    const f = d => d.replace(/[-:]/g, '').replace(/\.\d+/, '').slice(0, 15);
+    const f = d => d.replace(/[-:]/g, '').replace(/\.\d+/, '').slice(0, 15) + 'Z';
     return ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//92 Logics//Front Door Demo//EN', 'BEGIN:VEVENT', 'UID:' + ev.id + '@demo.92logics',
       'DTSTART:' + f(ev.start), 'DTEND:' + f(ev.end || ev.start), 'SUMMARY:' + ev.title, 'LOCATION:' + (ev.location || ev.town || ''),
       'DESCRIPTION:Demo event (synthetic) - 92 Logics demonstration', 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');

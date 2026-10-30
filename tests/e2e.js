@@ -97,7 +97,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   await page.select('#cmpChan', 'push'); await page.$eval('#cmpText', e => e.value = 'New training courses posted'); await page.$eval('#cmpWhen', e => e.value = '2026-11-12T23:00'); await page.$eval('#campForm', e => e.dispatchEvent(new Event('input')));
   await page.click('#cmpSend'); await sleep(200); ok(await page.$$eval('#schedTable .runNow', e => e.length) === 1, 'push scheduled');
   await page.click('.runNow'); await sleep(200); ok((await txt('#campOut')).includes('Sent'), 'scheduled push sent now');
-  await page.screenshot({ path: SHOTS + '/demo-screenshot-sms-console.png', fullPage: false });
+  await page.evaluate(() => window.scrollTo(0, 0)); await sleep(100); await page.screenshot({ path: SHOTS + '/demo-screenshot-sms-console.png', fullPage: false });
   await page.select('#role', 'Viewer'); await sleep(150); ok((await txt('#subTable')).includes('•••') && await page.$eval('#cmpSend', e => e.disabled), 'Viewer: phones masked, cannot send'); await page.select('#role', 'Admin'); await sleep(100);
   // consent log
   await go('#/staff/consent'); ok((await txt('#consentTable')).includes('keyword:STOP') && (await txt('#consentTable')).includes('keyword:START'), 'consent log shows STOP and START events');

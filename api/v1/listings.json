@@ -1,0 +1,269 @@
+{
+ "_note": "Demonstration by 92 Logics - not a WorkPlace system. Synthetic data only.",
+ "generated": "2026-10-30",
+ "count": 14,
+ "data": [
+  {
+   "id": "J101",
+   "type": "job",
+   "title": "Warehouse Associate",
+   "org": "Harborline Logistics (sample)",
+   "town": "Bridgeport",
+   "pay": 19.5,
+   "needs": [
+    "job"
+   ],
+   "tags": [
+    "entry level",
+    "full-time"
+   ],
+   "remote": false,
+   "cost": 0,
+   "status": "published",
+   "desc": "Synthetic job listing for demonstration. Warehouse Associate in Bridgeport, about $19.5/hr."
+  },
+  {
+   "id": "J102",
+   "type": "job",
+   "title": "Certified Nursing Assistant",
+   "org": "Shoreside Care Home (sample)",
+   "town": "Milford",
+   "pay": 21,
+   "needs": [
+    "job",
+    "training"
+   ],
+   "tags": [
+    "healthcare",
+    "CNA",
+    "certificate"
+   ],
+   "remote": false,
+   "cost": 0,
+   "status": "published",
+   "desc": "Synthetic job listing for demonstration. Certified Nursing Assistant in Milford, about $21/hr."
+  },
+  {
+   "id": "J103",
+   "type": "job",
+   "title": "IT Help Desk Technician",
+   "org": "Brightpath Tech (sample)",
+   "town": "Stamford",
+   "pay": 26,
+   "needs": [
+    "job"
+   ],
+   "tags": [
+    "IT",
+    "remote option"
+   ],
+   "remote": true,
+   "cost": 0,
+   "status": "published",
+   "desc": "Synthetic job listing for demonstration. IT Help Desk Technician in Stamford, about $26/hr."
+  },
+  {
+   "id": "J104",
+   "type": "job",
+   "title": "Customer Service Representative",
+   "org": "Northfield Insurance (sample)",
+   "town": "Norwalk",
+   "pay": 20,
+   "needs": [
+    "job",
+    "youth"
+   ],
+   "tags": [
+    "entry level",
+    "bilingual a plus"
+   ],
+   "remote": false,
+   "cost": 0,
+   "status": "published",
+   "desc": "Synthetic job listing for demonstration. Customer Service Representative in Norwalk, about $20/hr."
+  },
+  {
+   "id": "J105",
+   "type": "job",
+   "title": "CNC Machine Operator",
+   "org": "Valley Precision (sample)",
+   "town": "Ansonia",
+   "pay": 24,
+   "needs": [
+    "job"
+   ],
+   "tags": [
+    "manufacturing"
+   ],
+   "remote": false,
+   "cost": 0,
+   "status": "published",
+   "desc": "Synthetic job listing for demonstration. CNC Machine Operator in Ansonia, about $24/hr."
+  },
+  {
+   "id": "J106",
+   "type": "job",
+   "title": "Medical Billing Specialist",
+   "org": "Greenleaf Clinic (sample)",
+   "town": "Danbury",
+   "pay": 23,
+   "needs": [
+    "job"
+   ],
+   "tags": [
+    "healthcare",
+    "remote option"
+   ],
+   "remote": true,
+   "cost": 0,
+   "status": "published",
+   "desc": "Synthetic job listing for demonstration. Medical Billing Specialist in Danbury, about $23/hr."
+  },
+  {
+   "id": "J107",
+   "type": "job",
+   "title": "Retail Shift Lead",
+   "org": "Corner Market Co. (sample)",
+   "town": "Greenwich",
+   "pay": 18.5,
+   "needs": [
+    "job",
+    "youth"
+   ],
+   "tags": [
+    "part-time"
+   ],
+   "remote": false,
+   "cost": 0,
+   "status": "published",
+   "desc": "Synthetic job listing for demonstration. Retail Shift Lead in Greenwich, about $18.5/hr."
+  },
+  {
+   "id": "J108",
+   "type": "job",
+   "title": "Electrician Apprentice",
+   "org": "Coastline Electric (sample)",
+   "town": "Bridgeport",
+   "pay": 22,
+   "needs": [
+    "job",
+    "training",
+    "youth"
+   ],
+   "tags": [
+    "apprenticeship"
+   ],
+   "remote": false,
+   "cost": 0,
+   "status": "published",
+   "desc": "Synthetic job listing for demonstration. Electrician Apprentice in Bridgeport, about $22/hr."
+  },
+  {
+   "id": "T201",
+   "type": "training",
+   "title": "Google IT Support-style Certificate Prep (8 weeks)",
+   "org": "Regional Community College (sample)",
+   "town": "Stamford",
+   "cost": 0,
+   "needs": [
+    "training"
+   ],
+   "tags": [
+    "IT",
+    "evening"
+   ],
+   "remote": true,
+   "status": "published",
+   "desc": "Synthetic training listing. Cost to learner: free (sample)."
+  },
+  {
+   "id": "T202",
+   "type": "training",
+   "title": "CNA Training Course",
+   "org": "Healthcare Skills Center (sample)",
+   "town": "Bridgeport",
+   "cost": 0,
+   "needs": [
+    "training",
+    "job"
+   ],
+   "tags": [
+    "healthcare"
+   ],
+   "remote": false,
+   "status": "published",
+   "desc": "Synthetic training listing. Cost to learner: free (sample)."
+  },
+  {
+   "id": "T203",
+   "type": "training",
+   "title": "Advanced Manufacturing Bootcamp",
+   "org": "Manufacturing Alliance (sample)",
+   "town": "Ansonia",
+   "cost": 0,
+   "needs": [
+    "training"
+   ],
+   "tags": [
+    "manufacturing"
+   ],
+   "remote": false,
+   "status": "published",
+   "desc": "Synthetic training listing. Cost to learner: free (sample)."
+  },
+  {
+   "id": "T204",
+   "type": "training",
+   "title": "Commercial Driver (CDL-A) Program",
+   "org": "Truck Academy (sample)",
+   "town": "Milford",
+   "cost": 450,
+   "needs": [
+    "training"
+   ],
+   "tags": [
+    "transport"
+   ],
+   "remote": false,
+   "status": "published",
+   "desc": "Synthetic training listing. Cost to learner: $450."
+  },
+  {
+   "id": "T205",
+   "type": "training",
+   "title": "Digital Skills for Everyday Life",
+   "org": "Public Library (sample)",
+   "town": "Norwalk",
+   "cost": 0,
+   "needs": [
+    "training",
+    "career"
+   ],
+   "tags": [
+    "digital literacy",
+    "beginner"
+   ],
+   "remote": true,
+   "status": "published",
+   "desc": "Synthetic training listing. Cost to learner: free (sample)."
+  },
+  {
+   "id": "T206",
+   "type": "training",
+   "title": "Youth Pre-Apprenticeship: Building Trades",
+   "org": "Trades Council (sample)",
+   "town": "Bridgeport",
+   "cost": 0,
+   "needs": [
+    "training",
+    "youth"
+   ],
+   "tags": [
+    "ages 16-24"
+   ],
+   "remote": false,
+   "status": "published",
+   "desc": "Synthetic training listing. Cost to learner: free (sample)."
+  }
+ ]
+}

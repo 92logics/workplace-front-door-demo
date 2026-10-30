@@ -1,0 +1,110 @@
+{
+ "_note": "Demonstration by 92 Logics - not a WorkPlace system. Synthetic data only.",
+ "generated": "2026-10-30",
+ "count": 5,
+ "data": [
+  {
+   "id": "E301",
+   "type": "event",
+   "title": "Spring Hiring Fair (sample)",
+   "org": "Career Center (sample)",
+   "town": "Bridgeport",
+   "start": "2026-11-11T15:00:00.000Z",
+   "end": "2026-11-11T17:00:00.000Z",
+   "needs": [
+    "job",
+    "employer"
+   ],
+   "tags": [
+    "event"
+   ],
+   "remote": false,
+   "cost": 0,
+   "status": "published",
+   "location": "Bridgeport career center (sample)",
+   "desc": "Synthetic event for demonstration."
+  },
+  {
+   "id": "E302",
+   "type": "event",
+   "title": "Resume Workshop",
+   "org": "Career Center (sample)",
+   "town": "Stamford",
+   "start": "2026-11-06T17:00:00.000Z",
+   "end": "2026-11-06T19:00:00.000Z",
+   "needs": [
+    "job",
+    "career"
+   ],
+   "tags": [
+    "event"
+   ],
+   "remote": false,
+   "cost": 0,
+   "status": "published",
+   "location": "Stamford career center (sample)",
+   "desc": "Synthetic event for demonstration."
+  },
+  {
+   "id": "E303",
+   "type": "event",
+   "title": "Youth Career Day",
+   "org": "Career Center (sample)",
+   "town": "Norwalk",
+   "start": "2026-11-14T18:00:00.000Z",
+   "end": "2026-11-14T20:00:00.000Z",
+   "needs": [
+    "youth"
+   ],
+   "tags": [
+    "event"
+   ],
+   "remote": false,
+   "cost": 0,
+   "status": "published",
+   "location": "Norwalk career center (sample)",
+   "desc": "Synthetic event for demonstration."
+  },
+  {
+   "id": "E304",
+   "type": "event",
+   "title": "Employer Breakfast: Hiring Incentives",
+   "org": "Career Center (sample)",
+   "town": "Danbury",
+   "start": "2026-11-08T13:00:00.000Z",
+   "end": "2026-11-08T15:00:00.000Z",
+   "needs": [
+    "employer"
+   ],
+   "tags": [
+    "event"
+   ],
+   "remote": false,
+   "cost": 0,
+   "status": "published",
+   "location": "Danbury career center (sample)",
+   "desc": "Synthetic event for demonstration."
+  },
+  {
+   "id": "E305",
+   "type": "event",
+   "title": "Interview Practice Lab (virtual)",
+   "org": "Career Center (sample)",
+   "town": "Milford",
+   "start": "2026-11-05T22:00:00.000Z",
+   "end": "2026-11-06T00:00:00.000Z",
+   "needs": [
+    "career",
+    "job"
+   ],
+   "tags": [
+    "event"
+   ],
+   "remote": true,
+   "cost": 0,
+   "status": "published",
+   "location": "Milford career center (sample)",
+   "desc": "Synthetic event for demonstration."
+  }
+ ]
+}

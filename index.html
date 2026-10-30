@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b5394">
+<meta name="description" content="Digital Workforce Front Door - a working demonstration by 92 Logics. Not a WorkPlace system. All data is synthetic.">
+<title>Digital Workforce Front Door — 92 Logics demo</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="disclaimer" role="note">Demonstration by 92 Logics for The WorkPlace Mobile App RFP — not a WorkPlace system. All data is synthetic.</div>
+<header class="top">
+  <button id="menuBtn" class="iconbtn" aria-label="Open menu" aria-expanded="false" aria-controls="side">☰</button>
+  <a href="#/home" class="brand"><span aria-hidden="true">🚪</span> Front Door <small>demo</small></a>
+  <div class="tools">
+    <button id="langBtn" class="pill" aria-label="Cambiar a español">ES</button>
+    <button id="textBtn" class="pill" aria-label="Larger text" aria-pressed="false">A+</button>
+    <a id="inboxLink" class="pill" href="#/inbox" aria-label="Inbox">✉ <span id="unread" class="badge"></span></a>
+  </div>
+</header>
+<div class="layout">
+  <nav id="side" class="side" aria-label="Main">
+    <p class="navh" data-i="navSeeker">For job seekers</p>
+    <a href="#/home" data-i="home">Home</a>
+    <a href="#/find" data-i="find">Jobs &amp; training</a>
+    <a href="#/events" data-i="events">Events</a>
+    <a href="#/screener" data-i="screener">Find my services</a>
+    <a href="#/appointments" data-i="appts">Appointments</a>
+    <a href="#/inbox" data-i="inbox">Inbox</a>
+    <a href="#/saved" data-i="saved">Saved</a>
+    <a href="#/employer" data-i="employer">Employers</a>
+    <p class="navh">WorkPlace staff (demo)</p>
+    <a href="#/staff/content">Content manager</a>
+    <a href="#/staff/messaging">SMS &amp; push console</a>
+    <a href="#/staff/consent">Consent log</a>
+    <a href="#/staff/analytics">Analytics</a>
+    <a href="#/integrations">Integrations &amp; API</a>
+    <p class="navh">About</p>
+    <a href="#/about">About this demo</a>
+    <button id="resetBtn" class="linkbtn">Reset demo data</button>
+  </nav>
+  <main id="main" tabindex="-1"></main>
+</div>
+<nav class="tabbar" aria-label="Quick">
+  <a href="#/home"><span aria-hidden="true">🏠</span><b data-i="home">Home</b></a>
+  <a href="#/find"><span aria-hidden="true">🔎</span><b data-i="findShort">Find</b></a>
+  <a href="#/screener"><span aria-hidden="true">🧭</span><b data-i="screenerShort">Services</b></a>
+  <a href="#/appointments"><span aria-hidden="true">📅</span><b data-i="apptsShort">Book</b></a>
+  <a href="#/inbox"><span aria-hidden="true">✉</span><b data-i="inbox">Inbox</b></a>
+</nav>
+<div id="live" class="sr" aria-live="polite"></div>
+<footer class="foot">© 2026 92 Logics · Demonstration only · No real people, employers or phone numbers · No tracking, no external calls; data stays in your browser.</footer>
+<script src="core.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+ "_note": "Demonstration by 92 Logics - not a WorkPlace system. Synthetic data only.",
+ "generated": "2026-10-30",
+ "data": {
+  "sessions": 420,
+  "needClicks": {
+   "job": 140,
+   "training": 90,
+   "career": 60,
+   "youth": 45,
+   "employer": 25
+  },
+  "screeners": 64,
+  "appointments": 38,
+  "referrals": 21,
+  "employer": 9,
+  "searches": {
+   "cna": 30,
+   "warehouse": 22,
+   "it": 18,
+   "cdl": 12,
+   "resume": 10,
+   "youth": 8
+  },
+  "views": 210,
+  "smsSent": 300,
+  "smsDelivered": 285,
+  "deliveryRate": 95,
+  "optedIn": 17,
+  "optIns": 20,
+  "optOuts": 3,
+  "optOutRate": 13,
+  "pushEnabled": 16,
+  "funnel": {
+   "visits": 420,
+   "explored": 310,
+   "acted": 68
+  }
+ }
+}

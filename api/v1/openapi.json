@@ -1,0 +1,60 @@
+{
+ "openapi": "3.0.3",
+ "info": {
+  "title": "Front Door demo API (92 Logics demonstration)",
+  "version": "0.1",
+  "description": "Demonstration by 92 Logics - not a WorkPlace system. Synthetic data only. Production API: ASP.NET Core, OAuth2/Entra ID, role-scoped."
+ },
+ "paths": {
+  "/api/v1/listings.json": {
+   "get": {
+    "summary": "Published jobs and training (filters in production: q, type, town, remote, free)",
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    }
+   }
+  },
+  "/api/v1/events.json": {
+   "get": {
+    "summary": "Events (also as iCal feed in production)",
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    }
+   }
+  },
+  "/api/v1/services.json": {
+   "get": {
+    "summary": "Need-based service entry points",
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    }
+   }
+  },
+  "/api/v1/kpis.json": {
+   "get": {
+    "summary": "Aggregate, de-identified usage KPIs",
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    }
+   }
+  },
+  "/webhooks/sms/inbound": {
+   "post": {
+    "summary": "(production) Inbound SMS from provider; STOP/START/HELP handled, other text routed to staff queue; signature-verified",
+    "responses": {
+     "200": {
+      "description": "OK"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "_note": "Demonstration by 92 Logics - not a WorkPlace system. Synthetic data only.",
+ "generated": "2026-10-30",
+ "count": 5,
+ "data": [
+  {
+   "id": "job",
+   "label": "I need a job",
+   "label_es": "Necesito un trabajo",
+   "description": "Search openings, get resume help and meet a career coach."
+  },
+  {
+   "id": "training",
+   "label": "I want training",
+   "label_es": "Quiero capacitación",
+   "description": "Short courses, certificates and apprenticeships."
+  },
+  {
+   "id": "career",
+   "label": "I need career help",
+   "label_es": "Necesito ayuda profesional",
+   "description": "Talk to a counselor, plan next steps, practise interviews."
+  },
+  {
+   "id": "youth",
+   "label": "I am a young adult",
+   "label_es": "Soy un adulto joven",
+   "description": "Programs for ages 16-24: first jobs, school and skills."
+  },
+  {
+   "id": "employer",
+   "label": "I am an employer",
+   "label_es": "Soy un empleador",
+   "description": "Hiring help, recruiting events and training support."
+  }
+ ]
+}
